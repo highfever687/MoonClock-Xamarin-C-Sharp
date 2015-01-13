@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MonoForAndroid_API_12" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MoonTimeApp\Calc.cs">
+    <Files>
+      <File FileName="MoonTimeApp\Calc.cs" Line="1" Column="1" />
+      <File FileName="MoonTimeApp\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="MoonTimeApp\TheResults.cs" Line="1" Column="1" />
+      <File FileName="MoonTimeApp\Properties\AndroidManifest.xml" Line="1" Column="1" />
+      <File FileName="MoonTimeApp\Model.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MoonTimeApp MonoForAntroid.PreferredDevice="Nexus 4" />
+</Properties>

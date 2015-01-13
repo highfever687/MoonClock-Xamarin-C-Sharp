@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{E4E78A9F-0FC4-474E-A061-1B1B4602CE79}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MoonTimeApp</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AssemblyName>MoonTimeApp</AssemblyName>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Calc.cs" />
+    <Compile Include="TheResults.cs" />
+    <Compile Include="Model.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Resources\drawable\drawable-hdpi\blank.png" />
+    <None Include="Resources\drawable\drawable-hdpi\firstquarter90highsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\firstquarter90ineast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\firstquarter90inwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\firstquarter90loweast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\firstquarter90lowsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\firstquarter90lowwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\firstquarter90rising.png" />
+    <None Include="Resources\drawable\drawable-hdpi\firstquarter90setting.png" />
+    <None Include="Resources\drawable\drawable-hdpi\fullmoon180highsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\fullmoon180ineast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\fullmoon180inwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\fullmoon180loweast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\fullmoon180lowsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\fullmoon180lowwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\fullmoon180rising.png" />
+    <None Include="Resources\drawable\drawable-hdpi\fullmoon180setting.png" />
+    <None Include="Resources\drawable\drawable-hdpi\ic_launcher.png" />
+    <None Include="Resources\drawable\drawable-hdpi\newmoon0highsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\newmoon0ineast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\newmoon0inwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\newmoon0loweast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\newmoon0lowsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\newmoon0lowwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\newmoon0rising.png" />
+    <None Include="Resources\drawable\drawable-hdpi\newmoon0setting.png" />
+    <None Include="Resources\drawable\drawable-hdpi\second.png" />
+    <None Include="Resources\drawable\drawable-hdpi\thirdquarter90highsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\thirdquarter90ineast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\thirdquarter90inwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\thirdquarter90loweast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\thirdquarter90lowsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\thirdquarter90lowwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\thirdquarter90rising.png" />
+    <None Include="Resources\drawable\drawable-hdpi\thirdquarter90setting.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanningcrest45highsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanningcrest45ineast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanningcrest45inwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanningcrest45loweast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanningcrest45lowsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanningcrest45lowwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanningcrest45rising.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanningcrest45setting.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanninggibbous135highsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanninggibbous135ineast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanninggibbous135inwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanninggibbous135loweast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanninggibbous135lowsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanninggibbous135lowwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanninggibbous135rising.png" />
+    <None Include="Resources\drawable\drawable-hdpi\wanninggibbous135setting.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxingcrest45highsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxingcrest45ineast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxingcrest45inwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxingcrest45loweast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxingcrest45lowsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxingcrest45lowwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxingcrest45rising.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxingcrest45setting.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxinggibbous135highsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxinggibbous135ineast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxinggibbous135inwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxinggibbous135loweast.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxinggibbous135lowsky.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxinggibbous135lowwest.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxinggibbous135rising.png" />
+    <None Include="Resources\drawable\drawable-hdpi\waxinggibbous135setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\Raw\android.m4v" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\App.axml" />
+    <AndroidResource Include="Resources\layout\FinalResults.axml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\Raw\" />
+    <Folder Include="Resources\drawable\drawable-hdpi\" />
+  </ItemGroup>
+</Project>

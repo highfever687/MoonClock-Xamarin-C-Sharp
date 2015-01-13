@@ -1,0 +1,16 @@
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\bin\Debug\MoonTimeApp.dll
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\bin\Debug\MoonTimeApp.pdb
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\bin\Debug\MoonTimeApp.dll.mdb
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\bin\Debug\MoonTimeApp.MoonTimeApp.apk
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\bin\Debug\MoonTimeApp.MoonTimeApp-Signed.apk
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\MoonTimeApp.dll
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\MoonTimeApp.pdb
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\android\bin\MoonTimeApp.MoonTimeApp.apk
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\res\values\strings.xml
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\res\raw\android.m4v
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\res\layout\main.xml
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\res\layout\app.xml
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\res\layout\finalresults.xml
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\res\drawable\icon.png
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\R.cs.flag
+C:\Users\Derek\Desktop\stupid App\MoonTimeApp\obj\Debug\uploadflags.txt

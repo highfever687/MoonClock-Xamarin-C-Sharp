@@ -8,6 +8,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Content.Res;
 
 
 namespace MoonTimeApp
@@ -24,25 +25,25 @@ namespace MoonTimeApp
 			SetContentView (Resource.Layout.App);
 			Button resultsBtn = FindViewById<Button> (Resource.Id.btnCalcResults);
 			Button exitBtn = FindViewById<Button> (Resource.Id.btnExit2);
-			Button testBtn = FindViewById<Button> (Resource.Id.Test);
+			//ImageView res = FindViewById<ImageView> (Resource.Id.pic);
 			//NumberPicker elongation = FindViewById<NumberPicker> (Resource.Id.numberPickerElong);
+
 		exitBtn.Click += delegate {
 			System.Environment.Exit(0);
 		};		
-			testBtn.Click += delegate {
-				StartActivity(typeof(TheResults));
-			};		
+		
 		resultsBtn.Click += delegate {
+
 				String[] values=new String[12];
 				/*for(int i=0;i<values.Length;i++){
 					values[i]Int32.ToString(i*15);
 				}
 				*/
-
+				//var res = FindViewById<ImageView> (Resource.Id.pic);
 				for(int i=0;i<values.Length;i++){
 					values[i] = values[i*15].ToString();
 				}
-
+				var imageView = FindViewById<ImageView> (Resource.Id.pic);
 				RadioButton Eastern = FindViewById<RadioButton> (Resource.Id.radioButtonEast);
 				RadioButton Western = FindViewById<RadioButton> (Resource.Id.radioButtonWest);
 				RadioButton FullM = FindViewById<RadioButton> (Resource.Id.radioButtonFullMoon);
@@ -85,36 +86,36 @@ namespace MoonTimeApp
 					if(string.Equals(elongation, "45")){
 						switch (convertedAppear) {
 						case 1:
-							//imageOutput.setImageResource (R.drawable.waxingcrest45rising);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "waxingcrest45ineast";
+							imageView.SetImageResource (Resource.Drawable.waxingcrest45rising);
 							break;
 						case 2:
-							//imageOutput.setImageResource (R.drawable.waxingcrest45ineast);
-							aModel.CalculatedOutput = "waxingcrest45ineast";
+							//aModel.CalculatedOutput = "waxingcrest45ineast";
+							imageView.SetImageResource (Resource.Drawable.waxingcrest45ineast);
 							break;
 						case 3:
-							//imageOutput.setImageResource (R.drawable.waxingcrest45highsky);
-							aModel.CalculatedOutput = "waxingcrest45highsky";
+							//aModel.CalculatedOutput = "waxingcrest45highsky";
+							imageView.SetImageResource (Resource.Drawable.waxingcrest45highsky);
 							break;
-						case 4:
-							//imageOutput.setImageResource (R.drawable.waxingcrest45inwest);
-							aModel.CalculatedOutput = "waxingcrest45inwest";
+						case 4:			
+							//aModel.CalculatedOutput = "waxingcrest45inwest";
+							imageView.SetImageResource (Resource.Drawable.waxingcrest45inwest);
 							break;
-						case 5:
-							//imageOutput.setImageResource (R.drawable.waxingcrest45setting);
-							aModel.CalculatedOutput = "waxingcrest45setting";
+						case 5:		
+							//aModel.CalculatedOutput = "waxingcrest45setting";
+							imageView.SetImageResource (Resource.Drawable.waxingcrest45setting);
 							break;
 						case 6:
-							//imageOutput.setImageResource (R.drawable.waxingcrest45lowwest);
-							aModel.CalculatedOutput = "waxingcrest45lowwest";
+							//aModel.CalculatedOutput = "waxingcrest45lowwest";
+							imageView.SetImageResource (Resource.Drawable.waxingcrest45lowwest);
 							break;
-						case 7:
-							//imageOutput.setImageResource (R.drawable.waxingcrest45lowsky);
-							aModel.CalculatedOutput = "waxingcrest45lowsky";
+						case 7:		
+							//aModel.CalculatedOutput = "waxingcrest45lowsky";
+							imageView.SetImageResource (Resource.Drawable.waxingcrest45lowsky);
 							break;
 						case 8:
-							//imageOutput.setImageResource (R.drawable.waxingcrest45loweast);
-							aModel.CalculatedOutput = "waxingcrest45loweast";
+							//aModel.CalculatedOutput = "waxingcrest45loweast";
+							imageView.SetImageResource (Resource.Drawable.waxingcrest45loweast);
 							break;
 						}
 					}
@@ -123,36 +124,36 @@ namespace MoonTimeApp
 					else if(string.Equals(elongation, "90")){
 						switch (convertedAppear) {
 						case 1:
-							//imageOutput.setImageResource (R.drawable.firstquarter90rising);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "firstquarter90rising";
+							imageView.SetImageResource (Resource.Drawable.firstquarter90rising);
 							break;
 						case 2:
-							//imageOutput.setImageResource (R.drawable.firstquarter90ineast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "firstquarter90ineast";
+							imageView.SetImageResource (Resource.Drawable.firstquarter90ineast);
 							break;
 						case 3:
-							//imageOutput.setImageResource (R.drawable.firstquarter90highsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "firstquarter90highsky";
+							imageView.SetImageResource (Resource.Drawable.firstquarter90highsky);
 							break;
 						case 4:
-							//imageOutput.setImageResource (R.drawable.firstquarter90inwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "firstquarter90inwest";
+							imageView.SetImageResource (Resource.Drawable.firstquarter90inwest);
 							break;
 						case 5:
-							//imageOutput.setImageResource (R.drawable.firstquarter90setting);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "firstquarter90setting";
+							imageView.SetImageResource (Resource.Drawable.firstquarter90setting);
 							break;
 						case 6:
-							//imageOutput.setImageResource (R.drawable.firstquarter90lowwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "firstquarter90lowwest";
+							imageView.SetImageResource (Resource.Drawable.firstquarter90lowwest);
 							break;
 						case 7:
-							//imageOutput.setImageResource (R.drawable.firstquarter90lowsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "firstquarter90lowsky";
+							imageView.SetImageResource (Resource.Drawable.firstquarter90lowsky);
 							break;
 						case 8:
-							//imageOutput.setImageResource (R.drawable.firstquarter90loweast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "firstquarter90loweast";
+							imageView.SetImageResource (Resource.Drawable.firstquarter90loweast);
 							break;
 						}
 					} 
@@ -161,36 +162,36 @@ namespace MoonTimeApp
 					else if(string.Equals(elongation, "135")){
 						switch (convertedAppear) {
 						case 1:
-							//imageOutput.setImageResource (R.drawable.waxinggibbous135rising);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "waxinggibbous135rising";
+							imageView.SetImageResource (Resource.Drawable.waxinggibbous135rising);
 							break;
 						case 2:
-							//imageOutput.setImageResource (R.drawable.waxinggibbous135ineast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "waxinggibbous135ineast";
+							imageView.SetImageResource (Resource.Drawable.waxinggibbous135ineast);
 							break;
 						case 3:
-							//imageOutput.setImageResource (R.drawable.waxinggibbous135highsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "waxinggibbous135highsky";
+							imageView.SetImageResource (Resource.Drawable.waxinggibbous135highsky);
 							break;
 						case 4:
-							//imageOutput.setImageResource (R.drawable.waxinggibbous135inwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "waxinggibbous135inwest";
+							imageView.SetImageResource (Resource.Drawable.waxinggibbous135inwest);
 							break;
 						case 5:
-							//imageOutput.setImageResource (R.drawable.waxinggibbous135setting);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "waxinggibbous135setting";
+							imageView.SetImageResource (Resource.Drawable.waxinggibbous135setting);
 							break;
 						case 6:
-							//imageOutput.setImageResource (R.drawable.waxinggibbous135lowwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "waxinggibbous135lowwest";
+							imageView.SetImageResource (Resource.Drawable.waxinggibbous135lowwest);
 							break;
 						case 7:
-							//imageOutput.setImageResource (R.drawable.waxinggibbous135lowsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "waxinggibbous135lowsky";
+							imageView.SetImageResource (Resource.Drawable.waxinggibbous135lowsky);
 							break;
 						case 8:
-							//imageOutput.setImageResource (R.drawable.waxinggibbous135loweast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "waxinggibbous135loweast";
+							imageView.SetImageResource (Resource.Drawable.waxinggibbous135loweast);
 							break;
 						}
 					}
@@ -201,36 +202,36 @@ namespace MoonTimeApp
 					if(string.Equals(elongation, "45")){
 						switch (convertedAppear) {
 						case 1:
-							//imageOutput.setImageResource (R.drawable.wanningcrest45rising);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanningcrest45rising";
+							imageView.SetImageResource (Resource.Drawable.wanningcrest45rising);
 							break;
 						case 2:
-							//imageOutput.setImageResource (R.drawable.wanningcrest45ineast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanningcrest45ineast";
+							imageView.SetImageResource (Resource.Drawable.wanningcrest45ineast);
 							break;
 						case 3:
-							//imageOutput.setImageResource (R.drawable.wanningcrest45highsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanningcrest45highsky";
+							imageView.SetImageResource (Resource.Drawable.wanningcrest45highsky);
 							break;
 						case 4:
-							//imageOutput.setImageResource (R.drawable.wanningcrest45inwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanningcrest45inwest";
+							imageView.SetImageResource (Resource.Drawable.wanningcrest45inwest);
 							break;
 						case 5:
-							//imageOutput.setImageResource (R.drawable.wanningcrest45setting);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanningcrest45setting";
+							imageView.SetImageResource (Resource.Drawable.wanningcrest45setting);
 							break;
 						case 6:
-							//imageOutput.setImageResource (R.drawable.wanningcrest45lowwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanningcrest45lowwest";
+							imageView.SetImageResource (Resource.Drawable.wanningcrest45lowwest);
 							break;
 						case 7:
-							//imageOutput.setImageResource (R.drawable.wanningcrest45lowsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanningcrest45lowsky";
+							imageView.SetImageResource (Resource.Drawable.wanningcrest45lowsky);
 							break;
 						case 8:
-							//imageOutput.setImageResource (R.drawable.wanningcrest45loweast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanningcrest45loweast";
+							imageView.SetImageResource (Resource.Drawable.wanningcrest45loweast);
 							break;
 						}
 					} 
@@ -239,36 +240,36 @@ namespace MoonTimeApp
 					if(string.Equals(elongation, "90")){
 						switch (convertedAppear) {
 						case 1:
-							//imageOutput.setImageResource (R.drawable.thirdquarter90rising);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "thirdquarter90rising";
+							imageView.SetImageResource (Resource.Drawable.thirdquarter90rising);
 							break;
 						case 2:
-							//imageOutput.setImageResource (R.drawable.thirdquarter90ineast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "thirdquarter90ineast";
+							imageView.SetImageResource (Resource.Drawable.thirdquarter90ineast);
 							break;
 						case 3:
-							//imageOutput.setImageResource (R.drawable.thirdquarter90highsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "thirdquarter90highsky";
+							imageView.SetImageResource (Resource.Drawable.thirdquarter90highsky);
 							break;
 						case 4:
-							//imageOutput.setImageResource (R.drawable.thirdquarter90inwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "thirdquarter90inwest";
+							imageView.SetImageResource (Resource.Drawable.thirdquarter90inwest);
 							break;
 						case 5:
-							//imageOutput.setImageResource (R.drawable.thirdquarter90setting);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "thirdquarter90setting";
+							imageView.SetImageResource (Resource.Drawable.thirdquarter90setting);
 							break;
 						case 6:
-							//imageOutput.setImageResource (R.drawable.thirdquarter90lowwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "thirdquarter90lowwest";
+							imageView.SetImageResource (Resource.Drawable.thirdquarter90lowwest);
 							break;
 						case 7:
-							//imageOutput.setImageResource (R.drawable.thirdquarter90lowsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "thirdquarter90lowsky";
+							imageView.SetImageResource (Resource.Drawable.thirdquarter90lowsky);
 							break;
 						case 8:
-							//imageOutput.setImageResource (R.drawable.thirdquarter90loweast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "thirdquarter90loweast";
+							imageView.SetImageResource (Resource.Drawable.thirdquarter90loweast);
 							break;
 						}
 					} 
@@ -277,36 +278,36 @@ namespace MoonTimeApp
 					if(string.Equals(elongation, "135")){
 						switch (convertedAppear) {
 						case 1:
-							//imageOutput.setImageResource (R.drawable.wanninggibbous135rising);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanninggibbous135rising";
+							imageView.SetImageResource (Resource.Drawable.wanninggibbous135rising);
 							break;
 						case 2:
-							//imageOutput.setImageResource (R.drawable.wanninggibbous135ineast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanninggibbous135ineast";
+							imageView.SetImageResource (Resource.Drawable.wanninggibbous135ineast);
 							break;
 						case 3:
-							//imageOutput.setImageResource (R.drawable.wanninggibbous135highsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanninggibbous135highsky";
+							imageView.SetImageResource (Resource.Drawable.wanninggibbous135highsky);
 							break;
 						case 4:
-							//imageOutput.setImageResource (R.drawable.wanninggibbous135inwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanninggibbous135inwest";
+							imageView.SetImageResource (Resource.Drawable.wanninggibbous135inwest);
 							break;
 						case 5:
-							//imageOutput.setImageResource (R.drawable.wanninggibbous135setting);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanninggibbous135setting";
+							imageView.SetImageResource (Resource.Drawable.wanninggibbous135setting);
 							break;
 						case 6:
-							//imageOutput.setImageResource (R.drawable.wanninggibbous135lowwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanninggibbous135lowwest";
+							imageView.SetImageResource (Resource.Drawable.wanninggibbous135lowwest);
 							break;
 						case 7:
-							//imageOutput.setImageResource (R.drawable.wanninggibbous135lowsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanninggibbous135lowsky";
+							imageView.SetImageResource (Resource.Drawable.wanninggibbous135lowsky);
 							break;
 						case 8:
-							//imageOutput.setImageResource (R.drawable.wanninggibbous135loweast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "wanninggibbous135loweast)";
+							imageView.SetImageResource (Resource.Drawable.wanninggibbous135loweast);
 							break;
 						}
 					}		
@@ -317,38 +318,36 @@ namespace MoonTimeApp
 					if(string.Equals(elongation, "0")){
 						switch (convertedAppear) {
 						case 1:
-							//imageOutput.setImageResource (R.drawable.newmoon0rising);
-							//aModel.CalculatedOutput = "waxingcrest45rising";
-							//aModel.CalculatedOutput(Resources.GetDrawable(1));
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "newmoon0rising";
+							imageView.SetImageResource (Resource.Drawable.newmoon0rising);
 							break;
 						case 2:
-							//imageOutput.setImageResource (R.drawable.newmoon0ineast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "newmoon0ineast";
+							imageView.SetImageResource (Resource.Drawable.newmoon0ineast);
 							break;
 						case 3:
-							//imageOutput.setImageResource (R.drawable.newmoon0highsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "newmoon0highsky";
+							imageView.SetImageResource (Resource.Drawable.newmoon0highsky);
 							break;
 						case 4:
-							//imageOutput.setImageResource (R.drawable.newmoon0inwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "newmoon0inwest";
+							imageView.SetImageResource (Resource.Drawable.newmoon0inwest);
 							break;
 						case 5:
-							//imageOutput.setImageResource (R.drawable.newmoon0setting);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "newmoon0setting";
+							imageView.SetImageResource (Resource.Drawable.newmoon0setting);
 							break;
 						case 6:
-							//imageOutput.setImageResource (R.drawable.newmoon0lowwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "newmoon0lowwest";
+							imageView.SetImageResource (Resource.Drawable.newmoon0lowwest);
 							break;
 						case 7:
-							//imageOutput.setImageResource (R.drawable.newmoon0lowsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "newmoon0lowsky";
+							imageView.SetImageResource (Resource.Drawable.newmoon0lowsky);
 							break;
 						case 8:
-							//imageOutput.setImageResource (R.drawable.newmoon0loweast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "newmoon0loweast";
+							imageView.SetImageResource (Resource.Drawable.newmoon0loweast);
 							break;
 						}
 					}
@@ -359,41 +358,40 @@ namespace MoonTimeApp
 					if(string.Equals(elongation, "180")){
 						switch (convertedAppear) {
 						case 1:
-							//imageOutput.setImageResource (R.drawable.fullmoon180rising);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "fullmoon180rising";
+							imageView.SetImageResource (Resource.Drawable.fullmoon180rising);
 							break;
 						case 2:
-							//imageOutput.setImageResource (R.drawable.fullmoon180ineast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "fullmoon180ineast";
+							imageView.SetImageResource (Resource.Drawable.waxingcrest45rising);
 							break;
 						case 3:
-							//imageOutput.setImageResource (R.drawable.fullmoon180highsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "fullmoon180highsky";
+							imageView.SetImageResource (Resource.Drawable.fullmoon180highsky);
 							break;
 						case 4:
-							//imageOutput.setImageResource (R.drawable.fullmoon180inwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "fullmoon180inwest";
+							imageView.SetImageResource (Resource.Drawable.fullmoon180inwest);
 							break;
 						case 5:
-							//imageOutput.setImageResource (R.drawable.fullmoon180setting);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "fullmoon180setting";
+							imageView.SetImageResource (Resource.Drawable.fullmoon180setting);
 							break;
 						case 6:
-							//imageOutput.setImageResource (R.drawable.fullmoon180lowwest);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "fullmoon180lowwest";
+							imageView.SetImageResource (Resource.Drawable.fullmoon180lowwest);
 							break;
 						case 7:
-							//imageOutput.setImageResource (R.drawable.fullmoon180lowsky);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "fullmoon180lowsky";
+							imageView.SetImageResource (Resource.Drawable.waxingcrest45rising);
 							break;
 						case 8:
-							//imageOutput.setImageResource (R.drawable.fullmoon180loweast);
-							aModel.CalculatedOutput = "waxingcrest45rising";
+							//aModel.CalculatedOutput = "fullmoon180loweast";
+							imageView.SetImageResource (Resource.Drawable.fullmoon180loweast);
 							break;
 						}
 					}
 				}
-				StartActivity(typeof(TheResults));
 				};
 
 	

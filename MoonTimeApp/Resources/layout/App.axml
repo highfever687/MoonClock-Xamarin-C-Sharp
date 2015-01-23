@@ -72,9 +72,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnExit2" />
-    <Button
-        android:text="Activity Test"
+    <ImageView
+        android:src="@drawable/blank"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Test" />
+        android:layout_height="match_parent"
+        android:id="@+id/pic" />
 </LinearLayout>
